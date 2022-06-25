@@ -11,7 +11,7 @@ app = Flask(__name__)
 def hello_world():  # put application's code here
     return 'Hello World!'
 
-# For body temperature
+# Route for body temperature
 @app.route('/body_temperature', methods=['GET'])
 def body_temperature():
     i2c = board.I2C()
